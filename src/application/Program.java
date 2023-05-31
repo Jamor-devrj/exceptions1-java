@@ -1,4 +1,4 @@
-package application;
+package application;            //****SOLUCAO MUITO RUIM//
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -20,6 +20,8 @@ public class Program {
 		Date checkIn = sdf.parse(sc.next());
 		System.out.print("Check-out date (dd/MM/yyyy): ");
 		Date checkOut = sdf.parse(sc.next());
+		
+		
 		
 		if (!checkOut.after(checkIn)) {
 			System.out.println("Error in reservation: check-out date must be after check-in date");
